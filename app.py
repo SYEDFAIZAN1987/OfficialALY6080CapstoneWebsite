@@ -428,7 +428,7 @@ elif page == "Dashboards and Datasets":
                     data=file,
                     file_name=os.path.basename(path),
                     mime="application/octet-stream",
-                    key="download_dashboard"
+                    key=f"download_button_{idx}"
                 )
 
     # Datasets Section
