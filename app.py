@@ -365,7 +365,6 @@ if page == "Home":
     # Project Highlights
     st.write("""
     - **Deliverables:** Our deliverables include:
-        - Demographic Analysis
         - Power BI Dashboards
         - Power Point and Google Slides for presentation with google drive as cloud
         - Code in R files
