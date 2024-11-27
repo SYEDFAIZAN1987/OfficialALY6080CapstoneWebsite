@@ -450,7 +450,7 @@ elif page == "Dashboards and Datasets":
                     data=file,
                     file_name=os.path.basename(path),
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                    key=f"download_button_{idx}"
+                    key=f"dataset_button_{idx}"
                 )
 
 # Presentation Page
