@@ -420,16 +420,17 @@ elif page == "Dashboards and Datasets":
         "Housing Stability Dashboard": "Dashboards/Housing_Stability_Dashboard.pbix"
     }
 
-    for name, path in dashboards.items():
-        if os.path.exists(path):
-            with open(path, "rb") as file:
+    for idx, (name, path) in enumerate(dashboards.items()):  # idx is defined here
+        if os.path.exists(path):  # Check if the file exists
+            with open(path, "rb") as file:  # Open the file in binary mode
                 st.download_button(
-                    label=f"📊 Download {name}",
-                    data=file,
-                    file_name=os.path.basename(path),
-                    mime="application/octet-stream",
-                    key=f"download_button_{idx}"
+                    label=f"📊 Download {name}",  # Dynamic label
+                    data=file,  # File data
+                    file_name=os.path.basename(path),  # File name for download
+                    mime="application/octet-stream",  # MIME type
+                    key=f"download_button_{idx}"  # Unique key using idx
                 )
+
 
     # Datasets Section
     st.markdown("### Datasets")
