@@ -428,7 +428,7 @@ elif page == "Dashboards and Datasets":
                     data=file,
                     file_name=os.path.basename(path),
                     mime="application/octet-stream",
-                    key="download_community_services"
+                    key="download_dashboard"
                 )
 
     # Datasets Section
@@ -449,7 +449,7 @@ elif page == "Dashboards and Datasets":
                     data=file,
                     file_name=os.path.basename(path),
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                    key="download_social_services"
+                    key="get_services"
                 )
 
 # Presentation Page
@@ -464,7 +464,7 @@ elif page == "Presentation":
                 data=file,
                 file_name=os.path.basename(presentation_file),
                 mime="application/vnd.openxmlformats-officedocument.presentationml.presentation",
-                key="download_demographic_report"
+                key="download_demographic"
             )
 
     # Embed Google Slides Presentation
@@ -491,5 +491,5 @@ with st.sidebar:
     - Demographics Analysis
     - Predictive Analytics
     """)
-    if st.button("Clear Chat History",key=f"example_sidebar_key_{idx}"):
+    if st.button("Clear Chat History",key="example_sidebar"):
         st.session_state.chat_history = []
