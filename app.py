@@ -442,7 +442,7 @@ elif page == "Dashboards and Datasets":
         "Housing Data": "Consolidated_Datasets/consolidatedhousing.xlsx"
     }
 
-    for name, path in datasets.items():
+    for idx, (name, path) in enumerate(datasets.items()):
         if os.path.exists(path):
             with open(path, "rb") as file:
                 st.download_button(
@@ -450,7 +450,7 @@ elif page == "Dashboards and Datasets":
                     data=file,
                     file_name=os.path.basename(path),
                     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                    key="get_services"
+                    key=f"download_button_{idx}"
                 )
 
 # Presentation Page
