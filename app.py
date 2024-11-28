@@ -163,6 +163,10 @@ if page == "Home":
         - Demographics and Socio-Economic Data
         - Predictions from Machine Learning Models
         - Insights from Exploratory Data Analysis (EDA)
+        - ** Note: To use the RAG-Based Report Query Assistant, the "ASK" button must be clicked twice:
+          Once after entering the question in the input box.
+          A second time after the "Analyzing Sources" message disappears.
+          This ensures that the query is fully processed and returns accurate results.**
     """)
 
     # Chatbot Interface
