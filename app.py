@@ -157,17 +157,20 @@ if page == "Home":
 
     # Introduction
     st.markdown("""
-        This knowledge assistant is designed to answer questions related to the ALY 6080 Capstone Project, covering topics such as:
-        - Housing Stability
-        - Financial Trends
-        - Demographics and Socio-Economic Data
-        - Predictions from Machine Learning Models
-        - Insights from Exploratory Data Analysis (EDA)
-        - ** Note: To use the RAG-Based Report Query Assistant, the "ASK" button must be clicked twice:
-          Once after entering the question in the input box.
-          A second time after the "Analyzing Sources" message disappears.
-          This ensures that the query is fully processed and returns accurate results.**
-    """)
+This knowledge assistant is designed to answer questions related to the ALY 6080 Capstone Project, covering topics such as:
+- Housing Stability
+- Financial Trends
+- Demographics and Socio-Economic Data
+- Predictions from Machine Learning Models
+- Insights from Exploratory Data Analysis (EDA)
+
+**Note:** To use the RAG-Based Report Query Assistant, the **"ASK"** button must be clicked twice:
+1. Once after entering the question in the input box.
+2. A second time after the **"Analyzing Sources"** message disappears.
+
+This ensures that the query is fully processed and returns accurate results.
+""")
+
 
     # Chatbot Interface
     if 'chat_history' not in st.session_state:
