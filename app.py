@@ -487,11 +487,11 @@ elif page == "Presentation":
     )
 
      # Embed Google Slides Presentation
-    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vTnS13eSSJemdaSnQdy7nY4toi_2oF34DdNXFPKE_zcTaiarnkNON2B3_jBXGMr0Q/embed?start=false&loop=false&delayms=3000"
+    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vTnS13eSSJemdaSnQdy7nY4toi_2oF34DdNXFPKE_zcTaiarnkNON2B3_jBXGMr0Q/embed?start=true&loop=true&delayms=30000"
 
     st.markdown(
         f"""
-        <iframe src="{google_slides_embed_url2}" frameborder="0" width="100%" height="600px"
+        <iframe src="{google_slides_embed_url2}" frameborder="0" width="640" height="389" 
         allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         """,
         unsafe_allow_html=True,
