@@ -492,7 +492,7 @@ elif page == "Presentation":
     st.markdown(
         f"""
         <iframe src="{google_slides_embed_url2}" frameborder="0" width="100%" height="600px"
-          allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         """,
         unsafe_allow_html=True,
     )
