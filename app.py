@@ -219,8 +219,8 @@ This ensures that the query is fully processed and returns accurate results.
             {
                 "role": "system",
                 "content": (
-                    "You are a knowledgeable assistant with expertise in Yonge Street Mission (YSM) program analysis, TIMES assessment frameworks, service delivery optimization, and social service predictive analytics. 
-                    Provide clear, accurate answers based on provided information and your ALY 6980 Team 2 Capstone Project context analyzing participant outcomes across 26 programs serving 4,812 unique participants."
+                    "You are a knowledgeable assistant with expertise in Yonge Street Mission (YSM) program analysis, TIMES assessment frameworks, service delivery optimization, and social service predictive analytics." 
+                    "Provide clear, accurate answers based on provided information and your ALY 6980 Team 2 Capstone Project context analyzing participant outcomes across 26 programs serving 4,812 unique participants."
                 )
             },
             {"role": "user", "content": f"Question: {query}\nInformation: {joined_information}"}
