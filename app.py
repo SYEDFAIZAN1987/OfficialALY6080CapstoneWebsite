@@ -12,7 +12,7 @@ load_dotenv()
 
 # Page configuration
 st.set_page_config(
-    page_title="ALY 6080 Group 1 Report Chat Bot",
+    page_title="ALY 6980 Group 2 Report Chat Bot",
     page_icon="📘",
     layout="wide"
 )
@@ -121,9 +121,9 @@ if page == "Home":
     st.markdown("""
         <div class="header-container">
             <div class="divider"></div>
-            <h1 class="header-text">ALY 6080 Group 1 Capstone Project</h1>
+            <h1 class="header-text">ALY 6980 Group 2 Capstone Project</h1>
             <p class="header-text" style="font-size: 1.5em; font-weight: bold; color: red;">
-                Built by Syed Faizan, Team Lead of Group 1, ALY 6080, Northeastern University
+                Built by Syed Faizan, Team Member of Group 2, ALY 6980, Northeastern University
             </p>
         </div>
     """, unsafe_allow_html=True)
@@ -143,26 +143,29 @@ if page == "Home":
     # Display Team Images
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     with col1:
-        st.image("images/faizan.jpeg", use_container_width=True, caption="Team Lead: Syed Faizan")
+        st.image("images/faizan.jpeg", use_container_width=True, caption="Syed Faizan")
     with col2:
-        st.image("images/Christiana.jpeg", use_container_width=True, caption="Christiana")
+        st.image("images/viquar.jpeg", use_container_width=True, caption="Viquar Ahmed ")
     with col3:
-        st.image("images/Pravalika.jpeg", use_container_width=True, caption="Pravalika")
+        st.image("images/krutika.jpeg", use_container_width=True, caption="Krutika")
     with col4:
-        st.image("images/VrajShah.jpeg", use_container_width=True, caption="Vraj Shah")
+        st.image("images/vishnu.jpeg", use_container_width=True, caption="Vishnu")
     with col5:
-        st.image("images/Emelia.jpeg", use_container_width=True, caption="Emelia Doku")
+        st.image("images/sanket.jpeg", use_container_width=True, caption="Sanket")
     with col6:
-        st.image("images/Schicheng.jpeg", use_container_width=True, caption="Shicheng Wan")
+        st.image("images/pratham.jpeg", use_container_width=True, caption="Pratham")
 
     # Introduction
     st.markdown("""
-This knowledge assistant is designed to answer questions related to the ALY 6080 Capstone Project, covering topics such as:
-- Housing Stability
-- Financial Trends
-- Demographics and Socio-Economic Data
-- Predictions from Machine Learning Models
-- Insights from Exploratory Data Analysis (EDA)
+This knowledge assistant is designed to answer questions related to the ALY 6980 Capstone Project analyzing Yonge Street Mission (YSM) program data, covering topics such as:
+
+• Service Impact & Program Effectiveness (TIMES assessment analysis)
+
+• Demographics & Socioeconomic Analysis (participant profiling, housing stability, immigration status effects)
+
+• Predictive Modeling & Machine Learning (success prediction models, clustering analysis, disengagement forecasting)
+
+• Resource Allocation & Strategic Planning (budget optimization, staff projections, intersectional equity analysis)
 
 **Note:** To use the RAG-Based Report Query Assistant, the **"ASK"** button must be clicked twice:
 1. Once after entering the question in the input box.
@@ -216,9 +219,8 @@ This ensures that the query is fully processed and returns accurate results.
             {
                 "role": "system",
                 "content": (
-                    "You are a knowledgeable assistant with expertise in socio-economic data, housing stability, "
-                    "financial trends, and predictive analytics. Provide clear, accurate answers based on provided "
-                    "information and your ALY 6080 Group 1 Project context."
+                    "You are a knowledgeable assistant with expertise in Yonge Street Mission (YSM) program analysis, TIMES assessment frameworks, service delivery optimization, and social service predictive analytics. 
+                    Provide clear, accurate answers based on provided information and your ALY 6980 Team 2 Capstone Project context analyzing participant outcomes across 26 programs serving 4,812 unique participants."
                 )
             },
             {"role": "user", "content": f"Question: {query}\nInformation: {joined_information}"}
@@ -252,9 +254,9 @@ This ensures that the query is fully processed and returns accurate results.
 
 # If there's a current question in the session state, use it as the default value
     user_query = st.text_input(
-        label="Ask your question about the ALY 6080 project",
+        label="Ask your question about the ALY 6980 project",
         help="Type your question or click an example below",
-        placeholder="Example: What are the key trends in housing stability?",
+        placeholder="Example: What are the key trends in Service Impact & Program Effectiveness ?",
         value=st.session_state.current_question,
         key="unique_user_input_key"  # Assign a unique key
     )
@@ -265,10 +267,10 @@ This ensures that the query is fully processed and returns accurate results.
 
 # Example questions as buttons
     example_questions = [
-        "What are the key findings about housing stability?",
-        "What are the income trends for Toronto CMA?",
-        "How does the living wage prediction look for 2030?",
-        "What are the demographic trends observed in GTA?"
+    "What are the key findings about TIMES score improvements across programs?",
+    "What are the service utilization trends for YSM participants?",
+   "How does the participant success prediction model perform for different demographics?",
+   "What are the engagement patterns observed across the 6 participant cluste
     ]
 
     st.markdown("### 💡 Example Questions")
@@ -315,7 +317,7 @@ This ensures that the query is fully processed and returns accurate results.
     # Sidebar with information
     # Sidebar with information
     with st.sidebar:
-        st.image("images/uwgt.png", caption="Sponsor Logo", width=150)
+        st.image("images/ysmlogo.png", caption="Sponsor Logo", width=150)
 
         if st.button("Clear Chat History", key="clear_chat_sidebar"):
             st.session_state.chat_history = []
@@ -324,47 +326,47 @@ This ensures that the query is fully processed and returns accurate results.
         st.markdown("""
         ### About This Assistant
         
-        This knowledge assistant Chat Bot based on RAG is designed by Team Lead Syed Faizan to answer questions related to the ALY 6080 Capstone Project by Group 1, Northeastern University.
-        
-        **Project Highlights:**
-        - **Housing Stability:** Trends in eviction applications, housing starts, and affordability.
-        - **Financial Stability:** Income distribution, Gini coefficient trends, and living wage predictions.
-        - **Demographics:** Analysis of population growth, diversity, and socio-economic factors in the Greater Toronto Area (GTA).
-        - **Machine Learning Models:** Predictive analysis of low-income measures and unemployment rates.
-        - **Actionable Insights:** Recommendations for stakeholders based on analytical findings.
+       This knowledge assistant Chat Bot based on RAG is designed by Team 2 to answer questions related to the ALY 6980 Capstone Project, Northeastern University.
+        Project Highlights:
+
+        Service Impact Analysis: TIMES assessment improvements, program effectiveness across 26 programs, and optimal service sequences.
+        Participant Demographics: Analysis of 4,812 participants including age, gender, immigration status, and housing stability patterns.
+        Predictive Analytics: Machine learning models for success prediction (98% accuracy), disengagement forecasting, and participant clustering.
+        Resource Optimization: ROI analysis, budget scenario modeling, and strategic allocation recommendations for maximum community impact.
+        Equity & Outcomes: Intersectional analysis, service gap identification, and evidence-based interventions for vulnerable populations.
 
         #### 💡 Tips for Better Results
         - Be specific in your questions.
         - Focus on project-related topics.
-        - Explore housing, financial, and demographic trends in detail.
+        - Explore TIMES assessment improvements, and demographic analysis in detail.
         """)
 
     # Enhanced footer with credits
     st.markdown("---")
     st.markdown("""
     <div style="padding: 10px; font-size: 14px; color: #444;">
-        <p><strong>Team Members:</strong> Syed Faizan (Team Lead), Emelia Doku, Vraj Shah, Shicheng Wan, Pravalika Sorda, and Christiana Adjei.</p>
-        <p><strong>Data Sources:</strong> Public datasets, machine learning models, and EDA outputs from the ALY 6080 Capstone Project.</p>
-        <p>For additional resources or inquiries, please contact the Team Lead, Syed Faizan, via the contact section.</p>
+        <p><strong>Team Members:</strong> Syed Faizan, Viquar Ahmed, Krutika, Vishnu, Sanket, Pratham.</p>
+        <p><strong>Data Sources:</strong> Provided datasets, machine learning models, and EDA outputs from the ALY 6980 Capstone Project.</p>
+        <p>For additional resources or inquiries, please contact the Team Member, Syed Faizan, via the contact section.</p>
     </div>
     """, unsafe_allow_html=True)
 
     # Path to the project report file
-    project_report_file = "ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf"
+    project_report_file = "ALY_6980_Experential_learning_Group_2_Mid_Term_Deliverable.pdf"
 
     # Section Header
     st.markdown("""
     <div class="section">
-        <h3 style="color: #002D62; font-weight: bold;">About Our ALY 6080 Group 1 Project Deliverables</h3>
+        <h3 style="color: #002D62; font-weight: bold;">About Our ALY 6980 Group 2 Mid Term Project Deliverables</h3>
     </div>
     """, unsafe_allow_html=True)
 
     # Download Button for the Capstone Project Report
     with open(project_report_file, "rb") as file:
         st.download_button(
-            label="📄 Click here to download our ALY 6080 Capstone Project Report",
+            label="📄 Click here to download our ALY 6980 Capstone Project Mid Term Report",
             data=file,
-            file_name="ALY_6080_Experential_learning_Group_1_Module_12_Capstone_Sponsor_Deliverable.pdf",
+            file_name="ALY_6980_Experential_learning_Group_2_Mid_Term_Deliverable.pdf",
             mime="application/pdf",
             key="download_project_report"
         )
@@ -374,20 +376,16 @@ This ensures that the query is fully processed and returns accurate results.
     - **Deliverables:** Our deliverables include:
         - Power BI Dashboards
         - Power Point and Google Slides for presentation with google drive as cloud
-        - Code in R files
+        - Code in IPYNB files
         - GitHub Repository
         - A Detailed Report in PDF form.
         - An Interactive RAG based App that allows users to query our report
-    - **Project Focus and updates from the Mid Term presentation:** Our project has been updated on the following counts:
-        - Demographics and an active Citizenry now included in our analysis along with Housing Stability, and Financial Stability in the Toronto GTA.
-        - The interaction between these three critical domains is examined and is presented.
-        - We have updated our models and study to incorporate all the recommendations and rectifications of our Supervisor Dr. Jay Qi, Isabel and Anh of United Way Greater Toronto.
-        - The following changes have been made: 
-             1. Updating the Linear Regression Models to limit predictions to 2030. 
-             2. Adding Labels to all visualizations.
-             3. Building our presentation around the principles of story telling with an narrative arc with an explicit beginning, middle, and and summaries.
+    - **Project Focus in the Mid Term presentation:** Our project has focused on the following :
+        Service Impact Assessment and Participant Demographics now included in our analysis along with Housing Stability, and Resource Allocation across YSM programs.
+        The interaction between these three critical domains of social service delivery is examined and presented.
+        We have updated our models and study to incorporate all the recommendations and rectifications of our Supervisor Prof. Dr. Jay Qi, PhD and YSM program stakeholders.
     - **Technologies Used:**
-        - **Machine Learning Predictive Algorithms in R**
+        - **Machine Learning Predictive Algorithms in Python**
         - **R** for Exploratory Data Analysis (EDA)
         - **LaTeX** for Report Formulation
         - **VSCode** as the website code IDE
@@ -398,7 +396,7 @@ This ensures that the query is fully processed and returns accurate results.
 
 
     # Contact Me section
-    st.markdown('<div class="section"><h3>Contact the Team Lead Syed Faizan</h3>', unsafe_allow_html=True)
+    st.markdown('<div class="section"><h3>Contact the Team Member Syed Faizan</h3>', unsafe_allow_html=True)
     col1, col2, col3 = st.columns(3)
 
     with col2:
@@ -420,11 +418,8 @@ elif page == "Dashboards and Datasets":
     # Dashboards Section
     st.markdown("### Dashboards")
     dashboards = {
-        "Community Social Services Dashboard": "Dashboards/Community_Social_Services_Dashboard.pbix",
-        "Demographics Dashboard": "Dashboards/DemographicsDashboard.pbix",
-        "Engaged Residents Dashboard": "Dashboards/Engaged_Residents_Dashboard.pbix",
-        "Financial Stability Dashboard": "Dashboards/Financial_Stability_Dashboard.pbix",
-        "Housing Stability Dashboard": "Dashboards/Housing_Stability_Dashboard.pbix"
+        "Dashboard": "Dashboards/YSM_GroupProject.pbix"
+      
     }
 
     for idx, (name, path) in enumerate(dashboards.items()):  # idx is defined here
@@ -442,11 +437,8 @@ elif page == "Dashboards and Datasets":
     # Datasets Section
     st.markdown("### Datasets")
     datasets = {
-        "Demographics Data": "Consolidated_Datasets/combineddemographicsdata.xlsx",
-        "Community Services Data": "Consolidated_Datasets/consolidatedcommunityservicesdata.xlsx",
-        "Engaged Citizenry Data": "Consolidated_Datasets/consolidatedengagedcitizenry.xlsx",
-        "Financial Data": "Consolidated_Datasets/consolidatedfinancialdata.xlsx",
-        "Housing Data": "Consolidated_Datasets/consolidatedhousing.xlsx"
+        "Consolidated Data": "Consolidated_Datasets/YSM_Merged_Data.xlsx"
+        
     }
 
     for idx, (name, path) in enumerate(datasets.items()):
@@ -464,7 +456,7 @@ elif page == "Dashboards and Datasets":
 elif page == "Presentation":
     st.markdown("## Presentation")
 
-    presentation_file = "Presentation/ALY_6080_Final_SponsorProject_Group1.pptx"
+    presentation_file = "Presentation/ALY6980_Group2_PPT.pptx"
     if os.path.exists(presentation_file):
         with open(presentation_file, "rb") as file:
             st.download_button(
@@ -476,7 +468,7 @@ elif page == "Presentation":
             )
 
     # Embed Google Slides Presentation
-    google_slides_embed_url = "https://docs.google.com/presentation/d/e/2PACX-1vTXt9jxZXgzDgL8J_k8CjjKOmRhDlblAZyn479tJLMEuUwMv3ZgRn2OZjPfyUpiUQ/embed?start=true&loop=true&delayms=3000"
+    google_slides_embed_url = "https://docs.google.com/presentation/d/e/2PACX-1vSkm9UvlVSya3w5VuBzPgEad6CimkH1kwCz8tHsQIu0uDKhIxYlEOU8ijiXDyK1Hw/pubembed?start=false&loop=false&delayms=3000"
 
     st.markdown(
         f"""
@@ -487,7 +479,7 @@ elif page == "Presentation":
     )
 
      # Embed Google Slides Presentation
-    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vTnS13eSSJemdaSnQdy7nY4toi_2oF34DdNXFPKE_zcTaiarnkNON2B3_jBXGMr0Q/embed?start=true&loop=true&delayms=30000"
+    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vSkm9UvlVSya3w5VuBzPgEad6CimkH1kwCz8tHsQIu0uDKhIxYlEOU8ijiXDyK1Hw/pubembed?start=false&loop=false&delayms=3000"
 
     st.markdown(
         f"""
@@ -501,12 +493,12 @@ elif page == "Presentation":
 
 # Sidebar Details
 with st.sidebar:
-    st.image("images/uwgt.png", caption="Sponsor Logo", width=150)
+    st.image("images/ysmlogo.png", caption="Sponsor Logo", width=150)
     st.markdown("""
     ### About the Project
     **Project Highlights:**
-    - Housing Stability
-    - Financial Trends
+    - Times Score Analysis
+    - Housing Trends
     - Demographics Analysis
     - Predictive Analytics
     """)
