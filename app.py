@@ -145,7 +145,7 @@ if page == "Home":
     with col1:
         st.image("images/faizan.jpeg", use_container_width=True, caption="Syed Faizan")
     with col2:
-        st.image("images/viquar.jpeg", use_container_width=True, caption="Viquar Ahmed ")
+        st.image("images/viquar.jpeg", use_container_width=True, caption="Viquar Ahmed")
     with col3:
         st.image("images/krutika.jpeg", use_container_width=True, caption="Krutika")
     with col4:
