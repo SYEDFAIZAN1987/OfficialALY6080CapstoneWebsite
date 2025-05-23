@@ -270,7 +270,7 @@ This ensures that the query is fully processed and returns accurate results.
     "What are the key findings about TIMES score improvements across programs?",
     "What are the service utilization trends for YSM participants?",
    "How does the participant success prediction model perform for different demographics?",
-   "What are the engagement patterns observed across the 6 participant cluste
+   "What are the engagement patterns observed across the 6 participant cluste"
     ]
 
     st.markdown("### 💡 Example Questions")
