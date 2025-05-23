@@ -1,93 +1,99 @@
-
-
-## **Group 1 Capstone Presentation Submission for ALY 6080**
+## **Team 2 Capstone Presentation Submission for ALY 6980**
 
 **Submitted By:**  
-Group 1 - ALY 6080  
-**Team Lead:** Syed Faizan  
-**Members:** Christiana Adjei, Pravalika Sorda, Vraj Shah, Emelia Doku, Schicheng Wan  
-
+Team 2 - ALY 6980  
+**Team Members:** Viquar Ahmed Mohammed, Syed Faizan, Sanket Parmar, Vishnu Prasad Nambiar, Krutika Patel, Pratham Chhabra  
 
 **To:**  
-Prof. Dr. Jay Qi  
+Prof. Dr. Jay Qi, PhD  
 Supervisor, Northeastern University  
 
 **CC:**  
-United Way Greater Toronto (UWGT), our esteemed sponsor  
+Yonge Street Mission (YSM), our esteemed community partner  
 
 ---
 
 ## **Introduction**
-This document serves as the introduction to our official submission for the Capstone Presentation in ALY 6080. Our project, undertaken by Group 1, is an analytical exploration of critical socio-economic domains, focusing on **Housing Stability**, **Financial Stability**, and **Demographics** in the Greater Toronto Area (GTA). The deliverables aim to provide actionable insights and align with the objectives set forth by UWGT.  
+This document serves as the introduction to our official submission for the Capstone Presentation in ALY 6980. Our project, undertaken by Team 2, is a comprehensive analytical exploration of **Youth Service Measures (YSM) program effectiveness**, focusing on **Service Impact Assessment**, **Participant Demographics**, **Housing Stability**, and **Resource Allocation Optimization**. The deliverables aim to provide actionable insights for social service program enhancement and align with evidence-based practice objectives.
 
 ---
 
 ## **Deliverables**
 The following deliverables have been created and are part of our submission:  
 
-1. **Demographic Analysis**: Comprehensive data analysis of population trends, diversity, and socio-economic indicators.  
-2. **Power BI Dashboards**: Interactive dashboards for visualization of key trends in housing, financial stability, and demographics.  
-3. **PowerPoint and Google Slides Presentation**: A cohesive presentation available on Google Drive.  
-4. **Code in R Files**: Includes scripts used for data analysis and predictive modeling.  
-5. **GitHub Repository**: Version-controlled repository containing all code and project assets.  
-6. **Detailed Report (PDF)**: A thorough narrative of the project, findings, and recommendations.  
-7. **Interactive RAG-based App**: Allows users to query the report through a user-friendly interface. 
-8. ** The official website for the ALY 6080 Group 1 project**: Which contains the RAG-based Report query assist, all the dashboards and refined   datasets and the report in downloadable form. It also has the presentation in both downloadable and embedded form for direct viewing. 
+1. **Comprehensive Data Analysis**: Multi-dataset integration and analysis of 17,875 records representing 4,812 unique participants across 26 programs.  
+2. **Interactive Dashboards**: Visualization dashboards for TIMES score trends, demographic patterns, and program effectiveness metrics.  
+3. **PowerPoint Presentation**: A cohesive presentation showcasing key findings and recommendations.  
+4. **Python Analysis Scripts**: Complete codebase for data integration, machine learning models, and predictive analytics.  
+5. **GitHub Repository**: Version-controlled repository containing all analysis code and project documentation.  
+6. **Detailed Mid-Term Report (PDF)**: A comprehensive 134-page analysis with findings, methodology, and strategic recommendations.  
+7. **Interactive Knowledge Assistant**: RAG-based application for querying report findings and insights.  
+8. **Program Optimization Models**: Machine learning models for success prediction, clustering analysis, and resource allocation.
 
 ---
 
 ## **Links to Deliverables**
 
-- **Official Capstone Website:**  
-  [https://syedfaizanaly6080.streamlit.app/](https://syedfaizanaly6080.streamlit.app/)  
-
 - **GitHub Repository:**  
-  [https://github.com/SYEDFAIZAN1987/OfficialALY6080CapstoneWebsite.git](https://github.com/SYEDFAIZAN1987/OfficialALY6080CapstoneWebsite.git)  
+  [YSM Program Analysis Repository](#)  
 
-- **Presentation (Google Drive):**  
-  [Google Slides Link](https://docs.google.com/presentation/d/1QGrdpeNAwG_45T1ODmw3JLOHyW32zXnW/edit?usp=sharing&ouid=102395680669897522231&rtpof=true&sd=true)  
+- **Interactive Knowledge Assistant:**  
+  [YSM Data Analysis Query Tool](#)  
 
-- **Other Deliverables:**  
-  All additional deliverables, including Power BI dashboards, R code files, and the detailed report, have been uploaded to Canvas.  
+- **Presentation Materials:**  
+  [Team 2 Capstone Presentation](#)  
+
+- **Additional Deliverables:**  
+  All supplementary materials, including Python notebooks, data visualizations, and detailed analysis reports, are available in the project repository.  
 
 ---
 
 ## **Project Focus and Updates from the Mid-Term Presentation**
-Our project has undergone significant updates since the mid-term presentation:  
+Our project has undergone significant development since the mid-term presentation:  
 
-1. **Expanded Scope:**  
-   - Added **Demographics** and **Active Citizenry** to the existing analysis of Housing Stability and Financial Stability.  
-   - Examined interactions between these three critical domains.  
+1. **Expanded Analysis:**  
+   - **Service Impact Assessment** and **Participant Demographics** integrated with **Housing Stability** and **Resource Allocation** analysis across YSM programs.  
+   - Examined interactions between these critical domains of social service delivery.  
 
-2. **Revisions and Updates:**  
-   - Incorporated all recommendations and rectifications suggested by Prof. Dr. Jay Qi, Isabel, and Anh of UWGT.  
-   - Limited predictions from Linear Regression Models to 2030.  
-   - Improved visualizations by adding clear labels.  
-   - Built the presentation using principles of storytelling, creating a narrative arc with a clear beginning, middle, and end.  
+2. **Model Enhancement:**  
+   - Incorporated all recommendations and rectifications suggested by Prof. Dr. Jay Qi, PhD and YSM program stakeholders.  
+   - Developed sophisticated predictive models with 98% accuracy for participant success forecasting.  
+   - Enhanced data integration methodology addressing missing data challenges through hierarchical imputation strategies.  
+   - Built comprehensive analysis using machine learning principles, creating evidence-based recommendations for program optimization.  
 
 ---
 
 ## **Technologies Used**
 
 1. **Analysis and Modeling:**  
-   - Machine Learning Predictive Algorithms in **R**.  
-   - **R** for Exploratory Data Analysis (EDA).  
+   - **Python** with machine learning libraries (scikit-learn, pandas, numpy) for predictive analytics.  
+   - **Random Forest**, **K-means Clustering**, and **Prophet** for advanced modeling.  
+   - **SHAP** for model interpretability and feature importance analysis.  
 
-2. **Report and Presentation:**  
-   - **LaTeX** for report formulation.  
-   - **Google Slides** for a collaborative and accessible presentation.  
+2. **Data Integration and Processing:**  
+   - **Pandas** and **NumPy** for multi-dataset integration and preprocessing.  
+   - **Matplotlib** and **Seaborn** for comprehensive data visualization.  
+   - **Statistical analysis** using correlation, ANOVA, and survival analysis techniques.  
 
-3. **Development Tools:**  
-   - **VSCode** as the IDE for website development.  
-   - **Langchain** and **FAISS** libraries for the RAG backend.  
-   - **GitHub** for version control.  
-   - **OpenAI API** for natural language processing in the interactive app.  
-   - **HTML**, **CSS**, and **Streamlit** for front-end and app development.  
+3. **Development and Deployment:**  
+   - **Jupyter Notebooks** for iterative analysis and model development.  
+   - **Git/GitHub** for version control and collaborative development.  
+   - **Python web frameworks** for interactive dashboard development.  
+   - **LaTeX** for professional report formatting and documentation.  
+
+---
+
+## **Key Analytical Contributions**
+
+- **TIMES Assessment Framework Analysis**: Comprehensive evaluation of participant outcomes across multiple domains
+- **Predictive Success Modeling**: 98% accuracy models for identifying participants likely to benefit from specific interventions  
+- **Resource Optimization**: ROI analysis and strategic allocation recommendations for maximum community impact
+- **Demographic Equity Analysis**: Intersectional examination of service gaps and outcome disparities
+- **Program Effectiveness Evaluation**: Evidence-based assessment of 26 programs across 8 departments
 
 ---
 
 **Acknowledgment**  
-We extend our heartfelt gratitude to Prof. Dr. Jay Qi for his invaluable guidance throughout the project. We also thank UWGT for sponsoring this endeavor and providing meaningful feedback that enriched our work.  
+We extend our heartfelt gratitude to Prof. Dr. Jay Qi, PhD for his invaluable guidance and methodological expertise throughout the project. We also thank the Yonge Street Mission for providing access to their comprehensive program data and for their commitment to evidence-based social service improvement that made this meaningful analysis possible.
 
 ---
-
