@@ -357,14 +357,14 @@ This ensures that the query is fully processed and returns accurate results.
     # Section Header
     st.markdown("""
     <div class="section">
-        <h3 style="color: #002D62; font-weight: bold;">About Our ALY 6980 Group 2 Mid Term Project Deliverables</h3>
+        <h3 style="color: #002D62; font-weight: bold;">About Our ALY 6980 Group 2 Final Deliverables</h3>
     </div>
     """, unsafe_allow_html=True)
 
     # Download Button for the Capstone Project Report
     with open(project_report_file, "rb") as file:
         st.download_button(
-            label="📄 Click here to download our ALY 6980 Capstone Project Mid Term Report",
+            label="📄 Click here to download our ALY 6980 Capstone Project Final Report",
             data=file,
             file_name="ALY_6980_Experential_learning_Group_2_Mid_Term_Deliverable.pdf",
             mime="application/pdf",
@@ -468,7 +468,7 @@ elif page == "Presentation":
             )
 
     # Embed Google Slides Presentation
-    google_slides_embed_url = "https://docs.google.com/presentation/d/e/2PACX-1vQ2bDnvNkBG-cEMGQGg8s1pfr0hvXV5xoG8yKQudXgUV2G88zkTc7wRGwfYJ-NkYQ/pubembed?start=false&loop=false&delayms=3000"
+    google_slides_embed_url = "https://docs.google.com/presentation/d/e/2PACX-1vRKzr6rVKfypYbU0VfAjw8bKFj5IpyPefTZldsj_aimryr_dqHBv0IQ8vy6o410nQ/pubembed?start=false&loop=false&delayms=15000"
 
     st.markdown(
         f"""
@@ -479,7 +479,7 @@ elif page == "Presentation":
     )
 
      # Embed Google Slides Presentation
-    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vQ2bDnvNkBG-cEMGQGg8s1pfr0hvXV5xoG8yKQudXgUV2G88zkTc7wRGwfYJ-NkYQ/pubembed?start=false&loop=false&delayms=3000"
+    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vRKzr6rVKfypYbU0VfAjw8bKFj5IpyPefTZldsj_aimryr_dqHBv0IQ8vy6o410nQ/pubembed?start=false&loop=false&delayms=15000"
 
     st.markdown(
         f"""
