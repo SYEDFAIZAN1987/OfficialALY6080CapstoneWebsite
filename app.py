@@ -468,7 +468,7 @@ elif page == "Presentation":
             )
 
     # Embed Google Slides Presentation
-    google_slides_embed_url = "https://docs.google.com/presentation/d/e/2PACX-1vRKzr6rVKfypYbU0VfAjw8bKFj5IpyPefTZldsj_aimryr_dqHBv0IQ8vy6o410nQ/pubembed?start=false&loop=false&delayms=15000"
+    google_slides_embed_url = "https://docs.google.com/presentation/d/e/2PACX-1vQ4zBD_LJeHEX4gk2JkaViwsQvDdRd9y6sVVSt_VIrNmztVnLReQphS06az3zKxGQ/pubembed?start=false&loop=false&delayms=15000"
 
     st.markdown(
         f"""
@@ -479,7 +479,7 @@ elif page == "Presentation":
     )
 
      # Embed Google Slides Presentation
-    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vRKzr6rVKfypYbU0VfAjw8bKFj5IpyPefTZldsj_aimryr_dqHBv0IQ8vy6o410nQ/pubembed?start=false&loop=false&delayms=15000"
+    google_slides_embed_url2 = "https://docs.google.com/presentation/d/e/2PACX-1vQ4zBD_LJeHEX4gk2JkaViwsQvDdRd9y6sVVSt_VIrNmztVnLReQphS06az3zKxGQ/pubembed?start=false&loop=false&delayms=15000"
 
     st.markdown(
         f"""
