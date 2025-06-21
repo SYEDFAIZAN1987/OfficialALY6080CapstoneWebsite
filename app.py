@@ -380,7 +380,7 @@ This ensures that the query is fully processed and returns accurate results.
         - GitHub Repository
         - A Detailed Report in PDF form.
         - An Interactive RAG based App that allows users to query our report
-    - **Project Focus in the Mid Term presentation:** Our project has focused on the following :
+    - **Project Focus in the Final presentation:** Our project has focused on the following :
         Service Impact Assessment and Participant Demographics now included in our analysis along with Housing Stability, and Resource Allocation across YSM programs.
         The interaction between these three critical domains of social service delivery is examined and presented.
         We have updated our models and study to incorporate all the recommendations and rectifications of our Supervisor Prof. Dr. Jay Qi, PhD and YSM program stakeholders.
